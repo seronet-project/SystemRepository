@@ -1,0 +1,21 @@
+DeploymentModel SystemTiagoNavigation {
+
+	TargetPlatformReference SystemTiagoNavigation :: VirtualBoxImage
+	{
+		HostInterface eth0
+		LoginAccount smartsoft
+		UploadDirectory "/home/smartsoft/SOFTWARE/smartsoft"
+	}
+	NamingService
+	{	
+		portNr 20002
+		deploy-to SystemTiagoNavigation::VirtualBoxImage 
+	}
+	ComponentArtefact SystemTiagoNavigation.GazeboBaseServer deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.JoystickNavigation deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.JoystickServer deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.MapperGridMap deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.Planner deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.RobotConsole deploy-to SystemTiagoNavigation::VirtualBoxImage
+	ComponentArtefact SystemTiagoNavigation.SmartCdlServer deploy-to SystemTiagoNavigation::VirtualBoxImage
+}

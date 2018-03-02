@@ -1,0 +1,43 @@
+SystemComponentArchitecture SystemTiagoNavigation 
+{
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		ParameterStructInstance SmartCdlServerParams
+			
+		RequiredService LaserClient connect-to GazeboBaseServer.LaserServiceOut
+		RequiredService PlannerClient connect-to Planner.PlannerGoalServer
+		RequiredService NavVelSendClient connect-to GazeboBaseServer.NavVelServiceIn
+		ProvidedService NavVelSendServer
+	} 
+	ComponentInstance GazeboBaseServer instantiates SmartGazeboBaseServer
+	{
+		ProvidedService NavVelServiceIn
+		ProvidedService BaseStateServiceOut
+		ProvidedService LaserServiceOut
+	}
+	 
+	ComponentInstance JoystickNavigation instantiates SmartJoystickNavigation
+	{
+		RequiredService JoystickServiceIn connect-to JoystickServer.JoystickServcieOut
+		RequiredService NavVelServiceOut connect-to SmartCdlServer.NavVelSendServer
+	} 
+	ComponentInstance JoystickServer instantiates SmartJoystickServer
+	{
+		ParameterStructInstance SmartJoystickServerParameters
+		ProvidedService JoystickServcieOut
+	} 
+	ComponentInstance MapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn connect-to GazeboBaseServer.LaserServiceOut
+		ProvidedService CurrMapOut
+	} 
+	ComponentInstance Planner instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService BaseStateClient connect-to GazeboBaseServer.BaseStateServiceOut
+		RequiredService CurMapClient connect-to MapperGridMap.CurrMapOut
+		ProvidedService PlannerGoalServer
+	} 
+	ComponentInstance RobotConsole instantiates SmartRobotConsole
+	{
+	} 
+}

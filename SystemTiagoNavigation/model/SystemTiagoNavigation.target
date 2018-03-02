@@ -1,0 +1,9 @@
+TargetPlatformModel SystemTiagoNavigation {
+	
+TargetPlatform VirtualBoxImage
+	{
+		Linux "Ubuntu Linux 16.04 64bit"
+		LoginAccount smartsoft { FullName "SmartSoft Account" Email "max.muster@mail.com" }
+		NetworkInterface eth0 { HostAddress "localhost" Kind "NAT" }
+		CPU VirtualCPU { }
+	} }
