@@ -1,0 +1,7 @@
+TargetPlatformModel SystemTTS {
+
+TargetPlatformDefinition PC1
+	{
+		NetworkInterface eth1 { HostAddress "localhost" }
+		LoginAccount dange { FullName "Guest" Email "guest@example.com" }
+	} }

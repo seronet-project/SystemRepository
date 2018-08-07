@@ -1,0 +1,9 @@
+SystemParameterModel SystemP3dxNavigationRealWorldParams extendsSystem SystemP3dxNavigationRealWorld {
+
+	ComponentParameterInstance SmartLaserLMS200Server refinesParamStruct SmartLaserLMS200ServerParams {
+		ParameterRefinement Laser {
+			device = "/dev/ttyUSB0"
+		}
+	}
+
+ }

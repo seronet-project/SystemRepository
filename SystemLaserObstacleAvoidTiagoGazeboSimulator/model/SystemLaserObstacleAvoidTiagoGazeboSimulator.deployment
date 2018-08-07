@@ -1,0 +1,14 @@
+DeploymentModel SystemLaserObstacleAvoidTiagoGazeboSimulator {
+
+TargetPlatformReference PC1 using SystemLaserObstacleAvoidTiagoGazeboSimulator.PC1
+	{
+		UploadDirectory "/tmp"
+		LoginAccount dange
+		NetworkInterface eth2
+	}
+	ComponentArtefact SystemLaserObstacleAvoidTiagoGazeboSimulator.ComponentLaserObstacleAvoid deploy-to PC1
+	ComponentArtefact SystemLaserObstacleAvoidTiagoGazeboSimulator.SmartGazeboBaseServer deploy-to PC1
+	NamingService
+	{
+		deploy-to PC1 }
+}

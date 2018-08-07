@@ -1,0 +1,11 @@
+# This file is generated using the SmartMDSD Toolchain.
+# Any changes will be overwritten next time the deployment project
+# is deployed/run from within the SmartMDSD toolchain.
+
+REFERENCED_PROJECT_GazeboBaseServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartGazeboBaseServer"
+REFERENCED_PROJECT_JoystickNavigation="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartJoystickNavigation"
+REFERENCED_PROJECT_JoystickServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartJoystickServer"
+REFERENCED_PROJECT_MapperGridMap="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartMapperGridMap"
+REFERENCED_PROJECT_Planner="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartPlannerBreadthFirstSearch"
+REFERENCED_PROJECT_RobotConsole="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartRobotConsole"
+REFERENCED_PROJECT_SmartCdlServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/SmartCdlServer"

@@ -1,0 +1,14 @@
+SystemComponentArchitecture SystemLaserObstacleAvoidTiagoGazeboSimulator {
+
+ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+{
+	RequiredService LaserServiceIn
+	RequiredService NavigationVelocityServiceOut
+} ComponentInstance SmartGazeboBaseServer instantiates SmartGazeboBaseServer
+{
+	ProvidedService BaseSatateQueryAnsw
+	ProvidedService LocalizationUpdateServiceIn
+	ProvidedService NavVelServiceIn
+	ProvidedService BaseStateServiceOut
+	ProvidedService LaserServiceOut
+} Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> SmartGazeboBaseServer.NavVelServiceIn Connection ComponentLaserObstacleAvoid.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut }
