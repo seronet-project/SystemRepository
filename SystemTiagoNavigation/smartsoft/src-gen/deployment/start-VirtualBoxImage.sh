@@ -59,102 +59,6 @@ sleep 1
 export SMART_IP=localhost
 echo "starting components..."
 
-# Component instance GazeboBaseServer
-echo
-echo "############################################"
-echo "## Starting component instance GazeboBaseServer"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-GazeboBaseServer.sh (errors might be ignored)"
-bash startstop-hooks-GazeboBaseServer.sh pre-start
-cd $SCRIPT_DIR/GazeboBaseServer_data
-rm -f "../GazeboBaseServer.log"
-xterm -l -lf "../GazeboBaseServer.log" -title "GazeboBaseServer@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartGazeboBaseServer -filename=$SCRIPT_DIR/GazeboBaseServer.ini; echo; echo; echo 'GazeboBaseServer exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartGazeboBaseServer >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-GazeboBaseServer.sh post-start
-echo -e "\n\n\n"
-
-# Component instance JoystickNavigation
-echo
-echo "############################################"
-echo "## Starting component instance JoystickNavigation"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-JoystickNavigation.sh (errors might be ignored)"
-bash startstop-hooks-JoystickNavigation.sh pre-start
-cd $SCRIPT_DIR/JoystickNavigation_data
-rm -f "../JoystickNavigation.log"
-xterm -l -lf "../JoystickNavigation.log" -title "JoystickNavigation@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartJoystickNavigation -filename=$SCRIPT_DIR/JoystickNavigation.ini; echo; echo; echo 'JoystickNavigation exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartJoystickNavigation >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-JoystickNavigation.sh post-start
-echo -e "\n\n\n"
-
-# Component instance JoystickServer
-echo
-echo "############################################"
-echo "## Starting component instance JoystickServer"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-JoystickServer.sh (errors might be ignored)"
-bash startstop-hooks-JoystickServer.sh pre-start
-cd $SCRIPT_DIR/JoystickServer_data
-rm -f "../JoystickServer.log"
-xterm -l -lf "../JoystickServer.log" -title "JoystickServer@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartJoystickServer -filename=$SCRIPT_DIR/JoystickServer.ini; echo; echo; echo 'JoystickServer exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartJoystickServer >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-JoystickServer.sh post-start
-echo -e "\n\n\n"
-
-# Component instance MapperGridMap
-echo
-echo "############################################"
-echo "## Starting component instance MapperGridMap"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-MapperGridMap.sh (errors might be ignored)"
-bash startstop-hooks-MapperGridMap.sh pre-start
-cd $SCRIPT_DIR/MapperGridMap_data
-rm -f "../MapperGridMap.log"
-xterm -l -lf "../MapperGridMap.log" -title "MapperGridMap@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartMapperGridMap -filename=$SCRIPT_DIR/MapperGridMap.ini; echo; echo; echo 'MapperGridMap exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartMapperGridMap >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-MapperGridMap.sh post-start
-echo -e "\n\n\n"
-
-# Component instance Planner
-echo
-echo "############################################"
-echo "## Starting component instance Planner"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-Planner.sh (errors might be ignored)"
-bash startstop-hooks-Planner.sh pre-start
-cd $SCRIPT_DIR/Planner_data
-rm -f "../Planner.log"
-xterm -l -lf "../Planner.log" -title "Planner@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartPlannerBreadthFirstSearch -filename=$SCRIPT_DIR/Planner.ini; echo; echo; echo 'Planner exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartPlannerBreadthFirstSearch >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-Planner.sh post-start
-echo -e "\n\n\n"
-
-# Component instance RobotConsole
-echo
-echo "############################################"
-echo "## Starting component instance RobotConsole"
-cd $SCRIPT_DIR
-echo "executing startstop-hooks-RobotConsole.sh (errors might be ignored)"
-bash startstop-hooks-RobotConsole.sh pre-start
-cd $SCRIPT_DIR/RobotConsole_data
-rm -f "../RobotConsole.log"
-xterm -l -lf "../RobotConsole.log" -title "RobotConsole@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartRobotConsole -filename=$SCRIPT_DIR/RobotConsole.ini; echo; echo; echo 'RobotConsole exited.'; echo; /bin/bash --login" &
-echo $! >> $PID_XTERM
-echo SmartRobotConsole >> $PID_COMPONENT_NAMES
-cd $SCRIPT_DIR
-bash startstop-hooks-RobotConsole.sh post-start
-echo -e "\n\n\n"
-
 # Component instance SmartCdlServer
 echo
 echo "############################################"
@@ -171,6 +75,70 @@ cd $SCRIPT_DIR
 bash startstop-hooks-SmartCdlServer.sh post-start
 echo -e "\n\n\n"
 
+# Component instance SmartGazeboBaseServer
+echo
+echo "############################################"
+echo "## Starting component instance SmartGazeboBaseServer"
+cd $SCRIPT_DIR
+echo "executing startstop-hooks-SmartGazeboBaseServer.sh (errors might be ignored)"
+bash startstop-hooks-SmartGazeboBaseServer.sh pre-start
+cd $SCRIPT_DIR/SmartGazeboBaseServer_data
+rm -f "../SmartGazeboBaseServer.log"
+xterm -l -lf "../SmartGazeboBaseServer.log" -title "SmartGazeboBaseServer@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartGazeboBaseServer -filename=$SCRIPT_DIR/SmartGazeboBaseServer.ini; echo; echo; echo 'SmartGazeboBaseServer exited.'; echo; /bin/bash --login" &
+echo $! >> $PID_XTERM
+echo SmartGazeboBaseServer >> $PID_COMPONENT_NAMES
+cd $SCRIPT_DIR
+bash startstop-hooks-SmartGazeboBaseServer.sh post-start
+echo -e "\n\n\n"
+
+# Component instance SmartMapperGridMap
+echo
+echo "############################################"
+echo "## Starting component instance SmartMapperGridMap"
+cd $SCRIPT_DIR
+echo "executing startstop-hooks-SmartMapperGridMap.sh (errors might be ignored)"
+bash startstop-hooks-SmartMapperGridMap.sh pre-start
+cd $SCRIPT_DIR/SmartMapperGridMap_data
+rm -f "../SmartMapperGridMap.log"
+xterm -l -lf "../SmartMapperGridMap.log" -title "SmartMapperGridMap@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartMapperGridMap -filename=$SCRIPT_DIR/SmartMapperGridMap.ini; echo; echo; echo 'SmartMapperGridMap exited.'; echo; /bin/bash --login" &
+echo $! >> $PID_XTERM
+echo SmartMapperGridMap >> $PID_COMPONENT_NAMES
+cd $SCRIPT_DIR
+bash startstop-hooks-SmartMapperGridMap.sh post-start
+echo -e "\n\n\n"
+
+# Component instance SmartPlannerBreadthFirstSearch
+echo
+echo "############################################"
+echo "## Starting component instance SmartPlannerBreadthFirstSearch"
+cd $SCRIPT_DIR
+echo "executing startstop-hooks-SmartPlannerBreadthFirstSearch.sh (errors might be ignored)"
+bash startstop-hooks-SmartPlannerBreadthFirstSearch.sh pre-start
+cd $SCRIPT_DIR/SmartPlannerBreadthFirstSearch_data
+rm -f "../SmartPlannerBreadthFirstSearch.log"
+xterm -l -lf "../SmartPlannerBreadthFirstSearch.log" -title "SmartPlannerBreadthFirstSearch@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartPlannerBreadthFirstSearch -filename=$SCRIPT_DIR/SmartPlannerBreadthFirstSearch.ini; echo; echo; echo 'SmartPlannerBreadthFirstSearch exited.'; echo; /bin/bash --login" &
+echo $! >> $PID_XTERM
+echo SmartPlannerBreadthFirstSearch >> $PID_COMPONENT_NAMES
+cd $SCRIPT_DIR
+bash startstop-hooks-SmartPlannerBreadthFirstSearch.sh post-start
+echo -e "\n\n\n"
+
+# Component instance SmartRobotConsole
+echo
+echo "############################################"
+echo "## Starting component instance SmartRobotConsole"
+cd $SCRIPT_DIR
+echo "executing startstop-hooks-SmartRobotConsole.sh (errors might be ignored)"
+bash startstop-hooks-SmartRobotConsole.sh pre-start
+cd $SCRIPT_DIR/SmartRobotConsole_data
+rm -f "../SmartRobotConsole.log"
+xterm -l -lf "../SmartRobotConsole.log" -title "SmartRobotConsole@VirtualBoxImage Component" -hold -e "export LD_LIBRARY_PATH=$SCRIPT_DIR:\$LD_LIBRARY_PATH; $SCRIPT_DIR/SmartRobotConsole -filename=$SCRIPT_DIR/SmartRobotConsole.ini; echo; echo; echo 'SmartRobotConsole exited.'; echo; /bin/bash --login" &
+echo $! >> $PID_XTERM
+echo SmartRobotConsole >> $PID_COMPONENT_NAMES
+cd $SCRIPT_DIR
+bash startstop-hooks-SmartRobotConsole.sh post-start
+echo -e "\n\n\n"
+
 
 cd $SCRIPT_DIR
 
@@ -181,13 +149,11 @@ cd $SCRIPT_DIR
 ## stop
 stop)
 cd $SCRIPT_DIR
-bash startstop-hooks-GazeboBaseServer.sh pre-stop
-bash startstop-hooks-JoystickNavigation.sh pre-stop
-bash startstop-hooks-JoystickServer.sh pre-stop
-bash startstop-hooks-MapperGridMap.sh pre-stop
-bash startstop-hooks-Planner.sh pre-stop
-bash startstop-hooks-RobotConsole.sh pre-stop
 bash startstop-hooks-SmartCdlServer.sh pre-stop
+bash startstop-hooks-SmartGazeboBaseServer.sh pre-stop
+bash startstop-hooks-SmartMapperGridMap.sh pre-stop
+bash startstop-hooks-SmartPlannerBreadthFirstSearch.sh pre-stop
+bash startstop-hooks-SmartRobotConsole.sh pre-stop
 
 echo "kill all components..."
 
@@ -209,13 +175,11 @@ rm $PID_XTERM
 
 test -e SMART_NAMES && rm -f SMART_NAMES
 
-bash startstop-hooks-GazeboBaseServer.sh post-stop
-bash startstop-hooks-JoystickNavigation.sh post-stop
-bash startstop-hooks-JoystickServer.sh post-stop
-bash startstop-hooks-MapperGridMap.sh post-stop
-bash startstop-hooks-Planner.sh post-stop
-bash startstop-hooks-RobotConsole.sh post-stop
 bash startstop-hooks-SmartCdlServer.sh post-stop
+bash startstop-hooks-SmartGazeboBaseServer.sh post-stop
+bash startstop-hooks-SmartMapperGridMap.sh post-stop
+bash startstop-hooks-SmartPlannerBreadthFirstSearch.sh post-stop
+bash startstop-hooks-SmartRobotConsole.sh post-stop
 
 
 # collect log files

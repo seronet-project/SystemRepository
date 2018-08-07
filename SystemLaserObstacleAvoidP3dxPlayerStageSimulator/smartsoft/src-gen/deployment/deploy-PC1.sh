@@ -18,7 +18,7 @@
 # run this script from the component's root folder to deploy the scenario to device.
 #
 
-TARGET_SSHUSER=dange
+TARGET_SSHUSER=
 TARGET_IP=localhost
 TARGET_DIRECTORY="/tmp"
 DEPLOYMENT_DIRECTORY=SystemLaserObstacleAvoidP3dxPlayerStageSimulator.deployment/
@@ -130,9 +130,9 @@ if [ "$1" = "local" ]; then
 	rsync -l -r -v --progress --exclude ".svn" $DEPL_FILES $DEPLOYMENT_DIRECTORY/PC1
 else
 	# remote deployment
-	SSH_TARGET=dange@localhost:$TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
+	SSH_TARGET=localhost:$TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
 	echo "Deployment to $SSH_TARGET"
-	ssh dange@localhost mkdir -p $TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
+	ssh localhost mkdir -p $TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
 	
 	TMPDIR=$(mktemp -d --suffix=.deployment) || exit 1
 	echo "Temporary directory: $TMPDIR"

@@ -3,7 +3,7 @@ DeploymentModel SystemP3dxNavigationPlayerStageSimulator {
 TargetPlatformReference PC1 using SystemP3dxNavigationPlayerStageSimulator.PC1
 	{
 		UploadDirectory "/tmp"
-		LoginAccount dange
+
 		NetworkInterface eth2
 	}
 	ComponentArtefact SystemP3dxNavigationPlayerStageSimulator.ComponentPlayerStageSimulator deploy-to PC1

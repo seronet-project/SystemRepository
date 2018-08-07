@@ -3,7 +3,7 @@ DeploymentModel SystemLaserObstacleAvoidP3dxPlayerStageSimulator {
 	TargetPlatformReference PC1 using SystemLaserObstacleAvoidP3dxPlayerStageSimulator.PC1
 	{
 		UploadDirectory "/tmp"
-		LoginAccount dange
+
 		NetworkInterface eth2
 	}
 	ComponentArtefact SystemLaserObstacleAvoidP3dxPlayerStageSimulator.ComponentLaserObstacleAvoid deploy-to PC1

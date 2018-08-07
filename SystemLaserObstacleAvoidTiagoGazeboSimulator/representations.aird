@@ -392,15 +392,6 @@
         <children xmi:type="notation:Node" xmi:id="_OrhXkI_xEeiqe88wSyzFwQ" type="2002" element="_Oq8IwI_xEeiqe88wSyzFwQ">
           <children xmi:type="notation:Node" xmi:id="_OrhXk4_xEeiqe88wSyzFwQ" type="5006"/>
           <children xmi:type="notation:Node" xmi:id="_OrhXlI_xEeiqe88wSyzFwQ" type="7001">
-            <children xmi:type="notation:Node" xmi:id="_Qa5DcI_xEeiqe88wSyzFwQ" type="3008" element="_QauEUI_xEeiqe88wSyzFwQ">
-              <children xmi:type="notation:Node" xmi:id="_Qa5Dc4_xEeiqe88wSyzFwQ" type="5005"/>
-              <children xmi:type="notation:Node" xmi:id="_Qa5DdI_xEeiqe88wSyzFwQ" type="7002">
-                <styles xmi:type="notation:SortingStyle" xmi:id="_Qa5DdY_xEeiqe88wSyzFwQ"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_Qa5Ddo_xEeiqe88wSyzFwQ"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_Qa5DcY_xEeiqe88wSyzFwQ" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qa5Dco_xEeiqe88wSyzFwQ" x="7" y="42"/>
-            </children>
             <children xmi:type="notation:Node" xmi:id="_Q8Nn0I_xEeiqe88wSyzFwQ" type="3008" element="_Q8CBoI_xEeiqe88wSyzFwQ">
               <children xmi:type="notation:Node" xmi:id="_Q8Nn04_xEeiqe88wSyzFwQ" type="5005"/>
               <children xmi:type="notation:Node" xmi:id="_Q8Nn1I_xEeiqe88wSyzFwQ" type="7002">
@@ -509,32 +500,18 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Oq8IwY_xEeiqe88wSyzFwQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Oq8IwY_xEeiqe88wSyzFwQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_QauEUI_xEeiqe88wSyzFwQ" name="dange" tooltipText="LoginAccount">
-        <target xmi:type="Deployment:LoginAccountSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@login"/>
-        <semanticElements xmi:type="Deployment:LoginAccountSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@login"/>
-        <decorations xmi:type="viewpoint:Decoration" xmi:id="_QauEUo_xEeiqe88wSyzFwQ">
-          <description xmi:type="description_1:MappingBasedDecoration" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='DblClickDeco']"/>
-        </decorations>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_QauEUY_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
-      </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Q8CBoI_xEeiqe88wSyzFwQ" name="/tmp" tooltipText="UploadFolder">
         <target xmi:type="Deployment:UploadDirectory" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@directory"/>
         <semanticElements xmi:type="Deployment:UploadDirectory" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@directory"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Q8CosI_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Q8CosI_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
@@ -542,13 +519,10 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_SfZR0I_xEeiqe88wSyzFwQ" name="eth2" tooltipText="HostInterface">
         <target xmi:type="Deployment:NetworkInterfaceSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@host"/>
         <semanticElements xmi:type="Deployment:NetworkInterfaceSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@host"/>
-        <decorations xmi:type="viewpoint:Decoration" xmi:id="_SfZR0o_xEeiqe88wSyzFwQ">
-          <description xmi:type="description_1:MappingBasedDecoration" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='DblClickDeco']"/>
-        </decorations>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_SfZR0Y_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_SfZR0Y_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']"/>
@@ -560,7 +534,7 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Un85wY_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="253,206,137">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Un85wY_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
@@ -571,7 +545,7 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VDrMcY_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="253,206,137">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VDrMcY_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
@@ -582,12 +556,12 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VP98AI_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VP98AI_xEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_W_A3wI_xEeiqe88wSyzFwQ" name="deploy" sourceNode="_Un85wI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_W_A3wI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_Un85wI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
       <target xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1/@deploy"/>
       <semanticElements xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_W_A3wY_xEeiqe88wSyzFwQ" size="2">
@@ -596,7 +570,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Xn8gAI_xEeiqe88wSyzFwQ" name="deploy" sourceNode="_VDrMcI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Xn8gAI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_VDrMcI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
       <target xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2/@deploy"/>
       <semanticElements xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Xn8gAY_xEeiqe88wSyzFwQ" size="2">
@@ -605,7 +579,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_YmaTYI_xEeiqe88wSyzFwQ" name="deploy" sourceNode="_VP7fwI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_YmaTYI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_VP7fwI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
       <target xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3/@deploy"/>
       <semanticElements xmi:type="Deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_YmaTYY_xEeiqe88wSyzFwQ" size="2">

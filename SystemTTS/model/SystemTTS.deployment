@@ -3,7 +3,7 @@ DeploymentModel SystemTTS {
 TargetPlatformReference PC1 using SystemTTS.PC1
 	{
 		UploadDirectory "/tmp"
-		LoginAccount dange
+
 		NetworkInterface eth1
 	}
 	ComponentArtefact SystemTTS.ComponentTTS deploy-to PC1

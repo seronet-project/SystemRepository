@@ -5,20 +5,15 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 		RequiredService LaserClient
 		RequiredService PlannerClient
 		RequiredService BaseStateClient
-		RequiredService LaserClient2
-		RequiredService TrackingClient
-		RequiredService IRClient
-		RequiredService PathNavigationGoalClient
-		RequiredService NavVelSendClient
-		
-		ProvidedService NavVelSendServer
-		
-		ParameterStructInstance SystemTiagoNavigation.SmartCdlServer
+
+	RequiredService NavVelSendClient
+
+	ParameterStructInstance SystemTiagoNavigation.SmartCdlServer
 		
 		Activity CdlTask configuration CDL;
 		
 	}
-	ComponentInstance GazeboBaseServer instantiates SmartGazeboBaseServer
+	ComponentInstance SmartGazeboBaseServer instantiates SmartGazeboBaseServer
 	{
 		ProvidedService BaseStateServiceOut
 		ProvidedService LaserServiceOut
@@ -29,43 +24,26 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 		Activity LaserTask configuration Laser
 	}
 	 
-	ComponentInstance JoystickNavigation instantiates SmartJoystickNavigation
-	{
-		RequiredService JoystickServiceIn 
-//		{
-//			connectTo JoystickServer.JoystickServcieOut
-//			useMiddleware OpcUa_SeRoNet
-//		}
-		RequiredService NavVelServiceOut
-	}
-	 
-	ComponentInstance JoystickServer instantiates SmartJoystickServer
-	{
-		ProvidedService JoystickServcieOut
-		ParameterStructInstance SystemTiagoNavigation.JoystickServer
-	} 
-	ComponentInstance MapperGridMap instantiates SmartMapperGridMap
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
 	{
 		RequiredService LaserServiceIn // { connectTo GazeboBaseServer.LaserServiceOut }
 		ProvidedService CurrMapOut
 	} 
-	ComponentInstance Planner instantiates SmartPlannerBreadthFirstSearch
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
 	{
 		RequiredService BaseStateClient // { connectTo GazeboBaseServer.BaseStateServiceOut }
 		RequiredService CurMapClient // { connectTo MapperGridMap.CurrMapOut }
 		ProvidedService PlannerGoalServer
 	} 
-	ComponentInstance RobotConsole instantiates SmartRobotConsole
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
 	{
 	}
 	
-	Connection JoystickNavigation.JoystickServiceIn -> JoystickServer.JoystickServcieOut useMiddleware OpcUa_SeRoNet;
-	Connection Planner.CurMapClient -> MapperGridMap.CurrMapOut;
-	Connection Planner.BaseStateClient -> GazeboBaseServer.BaseStateServiceOut;
-	Connection SmartCdlServer.BaseStateClient -> GazeboBaseServer.BaseStateServiceOut;
-	Connection SmartCdlServer.LaserClient -> GazeboBaseServer.LaserServiceOut;
-	Connection MapperGridMap.LaserServiceIn -> GazeboBaseServer.LaserServiceOut;
-	Connection SmartCdlServer.NavVelSendClient -> GazeboBaseServer.NavVelServiceIn;
-	Connection SmartCdlServer.PlannerClient -> Planner.PlannerGoalServer;
-	Connection JoystickNavigation.NavVelServiceOut -> SmartCdlServer.NavVelSendServer;
+	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut;
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
+	Connection SmartCdlServer.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
+	Connection SmartCdlServer.LaserClient -> SmartGazeboBaseServer.LaserServiceOut;
+	Connection SmartMapperGridMap.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut;
+	Connection SmartCdlServer.NavVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn;
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer;
 }

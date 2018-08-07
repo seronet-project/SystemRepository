@@ -9,14 +9,12 @@ DeploymentModel SystemTiagoNavigation using ComponentArchitecture SystemTiagoNav
 	TargetPlatformReference VirtualBoxImage using SystemTiagoNavigation.VirtualBoxImage
 	{
 		NetworkInterface eth0
-		LoginAccount smartsoft
-		UploadDirectory "/home/smartsoft/SOFTWARE/smartsoft"
+
+		UploadDirectory "/tmp/"
 	}
-	ComponentArtefact GazeboBaseServer deploy-to VirtualBoxImage
-	ComponentArtefact JoystickNavigation deploy-to VirtualBoxImage
-	ComponentArtefact JoystickServer deploy-to VirtualBoxImage
-	ComponentArtefact MapperGridMap deploy-to VirtualBoxImage
-	ComponentArtefact Planner deploy-to VirtualBoxImage
-	ComponentArtefact RobotConsole deploy-to VirtualBoxImage
+	ComponentArtefact SmartGazeboBaseServer deploy-to VirtualBoxImage
+	ComponentArtefact SmartMapperGridMap deploy-to VirtualBoxImage
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to VirtualBoxImage
+	ComponentArtefact SmartRobotConsole deploy-to VirtualBoxImage
 	ComponentArtefact SmartCdlServer deploy-to VirtualBoxImage
 }

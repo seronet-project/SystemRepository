@@ -18,35 +18,25 @@
 # This script collects the generated ini-file parts and combines them into single ini-files (one for each component artefact)
 #
 
-# create ini-file GazeboBaseServer.ini
-echo "create ini-file GazeboBaseServer.ini"
-cp src-gen/system/GazeboBaseServer.ini src-gen/deployment/
-cat src-gen/params/GazeboBaseServer.ini >> src-gen/deployment/GazeboBaseServer.ini
+# create ini-file SmartGazeboBaseServer.ini
+echo "create ini-file SmartGazeboBaseServer.ini"
+cp src-gen/system/SmartGazeboBaseServer.ini src-gen/deployment/
+cat src-gen/params/SmartGazeboBaseServer.ini >> src-gen/deployment/SmartGazeboBaseServer.ini
 
-# create ini-file JoystickNavigation.ini
-echo "create ini-file JoystickNavigation.ini"
-cp src-gen/system/JoystickNavigation.ini src-gen/deployment/
-cat src-gen/params/JoystickNavigation.ini >> src-gen/deployment/JoystickNavigation.ini
+# create ini-file SmartMapperGridMap.ini
+echo "create ini-file SmartMapperGridMap.ini"
+cp src-gen/system/SmartMapperGridMap.ini src-gen/deployment/
+cat src-gen/params/SmartMapperGridMap.ini >> src-gen/deployment/SmartMapperGridMap.ini
 
-# create ini-file JoystickServer.ini
-echo "create ini-file JoystickServer.ini"
-cp src-gen/system/JoystickServer.ini src-gen/deployment/
-cat src-gen/params/JoystickServer.ini >> src-gen/deployment/JoystickServer.ini
+# create ini-file SmartPlannerBreadthFirstSearch.ini
+echo "create ini-file SmartPlannerBreadthFirstSearch.ini"
+cp src-gen/system/SmartPlannerBreadthFirstSearch.ini src-gen/deployment/
+cat src-gen/params/SmartPlannerBreadthFirstSearch.ini >> src-gen/deployment/SmartPlannerBreadthFirstSearch.ini
 
-# create ini-file MapperGridMap.ini
-echo "create ini-file MapperGridMap.ini"
-cp src-gen/system/MapperGridMap.ini src-gen/deployment/
-cat src-gen/params/MapperGridMap.ini >> src-gen/deployment/MapperGridMap.ini
-
-# create ini-file Planner.ini
-echo "create ini-file Planner.ini"
-cp src-gen/system/Planner.ini src-gen/deployment/
-cat src-gen/params/Planner.ini >> src-gen/deployment/Planner.ini
-
-# create ini-file RobotConsole.ini
-echo "create ini-file RobotConsole.ini"
-cp src-gen/system/RobotConsole.ini src-gen/deployment/
-cat src-gen/params/RobotConsole.ini >> src-gen/deployment/RobotConsole.ini
+# create ini-file SmartRobotConsole.ini
+echo "create ini-file SmartRobotConsole.ini"
+cp src-gen/system/SmartRobotConsole.ini src-gen/deployment/
+cat src-gen/params/SmartRobotConsole.ini >> src-gen/deployment/SmartRobotConsole.ini
 
 # create ini-file SmartCdlServer.ini
 echo "create ini-file SmartCdlServer.ini"

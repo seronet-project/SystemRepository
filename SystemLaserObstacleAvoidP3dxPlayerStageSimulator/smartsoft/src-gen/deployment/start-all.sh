@@ -31,8 +31,8 @@ start)
 	
 	echo "Starting all devices ..."
 	
-	echo "Starting dange@localhost"
-	xterm -fg red -title "SSH: dange@localhost" -e 'echo;echo "Starting remote SSH session at dange@localhost ..."; echo;echo;ssh -X dange@localhost "cd /tmp/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.deployment; pwd; bash --login -i -e start-PC1.sh start"' &
+	echo "Starting localhost"
+	xterm -fg red -title "SSH: localhost" -e 'echo;echo "Starting remote SSH session at localhost ..."; echo;echo;ssh -X localhost "cd /tmp/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.deployment; pwd; bash --login -i -e start-PC1.sh start"' &
 	echo $! >> $PID_FILE
 	
 ;;
@@ -40,8 +40,8 @@ start)
 stop)
 	echo "Stopping all devices"
 	
-	echo "Stopping dange@localhost"
-	xterm -title "stopping dange@localhost" -e 'echo;echo "Starting remote SSH session at dange@localhost ..."; echo;echo;ssh -X dange@localhost "cd /tmp/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.deployment; pwd; bash --login -i -e start-PC1.sh stop"' 
+	echo "Stopping localhost"
+	xterm -title "stopping localhost" -e 'echo;echo "Starting remote SSH session at localhost ..."; echo;echo;ssh -X localhost "cd /tmp/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.deployment; pwd; bash --login -i -e start-PC1.sh stop"' 
 	echo $! >> $PID_FILE
 	
 	

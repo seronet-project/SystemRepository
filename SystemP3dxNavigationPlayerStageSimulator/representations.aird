@@ -691,15 +691,6 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_JIxDIZDBEeigF96pv4uYFQ" fontName="Ubuntu" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JIxDIpDBEeigF96pv4uYFQ" x="31" y="42"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_LdnaoJDBEeigF96pv4uYFQ" type="3008" element="_LdKHoJDBEeigF96pv4uYFQ">
-              <children xmi:type="notation:Node" xmi:id="_Ldnao5DBEeigF96pv4uYFQ" type="5005"/>
-              <children xmi:type="notation:Node" xmi:id="_LdnapJDBEeigF96pv4uYFQ" type="7002">
-                <styles xmi:type="notation:SortingStyle" xmi:id="_LdnapZDBEeigF96pv4uYFQ"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_LdnappDBEeigF96pv4uYFQ"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_LdnaoZDBEeigF96pv4uYFQ" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LdnaopDBEeigF96pv4uYFQ" x="343" y="42"/>
-            </children>
             <children xmi:type="notation:Node" xmi:id="_etjaQJDBEeigF96pv4uYFQ" type="3008" element="_etNcAJDBEeigF96pv4uYFQ">
               <children xmi:type="notation:Node" xmi:id="_etjaQ5DBEeigF96pv4uYFQ" type="5005"/>
               <children xmi:type="notation:Node" xmi:id="_etjaRJDBEeigF96pv4uYFQ" type="7002">
@@ -889,17 +880,6 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_LdKHoJDBEeigF96pv4uYFQ" name="dange" tooltipText="LoginAccount">
-        <target xmi:type="Deployment:LoginAccountSelection" href="model/SystemP3dxNavigationPlayerStageSimulator.deployment#//@elements.0/@login"/>
-        <semanticElements xmi:type="Deployment:LoginAccountSelection" href="model/SystemP3dxNavigationPlayerStageSimulator.deployment#//@elements.0/@login"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_LdKHoZDBEeigF96pv4uYFQ" borderSize="1" borderSizeComputationExpression="1">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_etNcAJDBEeigF96pv4uYFQ" name="eth2" tooltipText="HostInterface">
         <target xmi:type="Deployment:NetworkInterfaceSelection" href="model/SystemP3dxNavigationPlayerStageSimulator.deployment#//@elements.0/@host"/>

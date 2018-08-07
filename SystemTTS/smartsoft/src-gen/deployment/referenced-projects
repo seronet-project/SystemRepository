@@ -2,5 +2,5 @@
 # Any changes will be overwritten next time the deployment project
 # is deployed/run from within the SmartMDSD toolchain.
 
-REFERENCED_PROJECT_ComponentTTS="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/ComponentTTS"
-REFERENCED_PROJECT_ComponentTTSClient="/home/alexej/SOFTWARE/v3-smartsoft-repos/src/v3.6/ComponentRepository/ComponentTTSClient"
+REFERENCED_PROJECT_ComponentTTS="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/repos/ComponentRepository/ComponentTTS"
+REFERENCED_PROJECT_ComponentTTSClient="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/repos/ComponentRepository/ComponentTTSClient"

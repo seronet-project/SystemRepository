@@ -18,9 +18,9 @@
 # run this script from the component's root folder to deploy the scenario to device.
 #
 
-TARGET_SSHUSER=smartsoft
+TARGET_SSHUSER=
 TARGET_IP=localhost
-TARGET_DIRECTORY="/home/smartsoft/SOFTWARE/smartsoft"
+TARGET_DIRECTORY="/tmp/"
 DEPLOYMENT_DIRECTORY=SystemTiagoNavigation.deployment/
 
 echo "#######################################################"
@@ -37,150 +37,6 @@ echo Sourcing referenced projects
 source src-gen/deployment/referenced-projects
 
 DEPLOY_LIBRARIES_USER=""
-echo "Sourcing pre-deployment script for GazeboBaseServer... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-GazeboBaseServer.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartGazeboBaseServer/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $REFERENCED_PROJECT_SmartGazeboBaseServer/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $I"
-	fi
-done
-
-echo
-echo "Sourcing pre-deployment script for JoystickNavigation... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-JoystickNavigation.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartJoystickNavigation/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation="$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation $REFERENCED_PROJECT_SmartJoystickNavigation/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation="$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation $I"
-	fi
-done
-
-echo
-echo "Sourcing pre-deployment script for JoystickServer... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-JoystickServer.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartJoystickServer/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer $REFERENCED_PROJECT_SmartJoystickServer/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer $I"
-	fi
-done
-
-echo
-echo "Sourcing pre-deployment script for MapperGridMap... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-MapperGridMap.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartMapperGridMap/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap="$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $REFERENCED_PROJECT_SmartMapperGridMap/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap="$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $I"
-	fi
-done
-
-echo
-echo "Sourcing pre-deployment script for Planner... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-Planner.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch="$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch="$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $I"
-	fi
-done
-
-echo
-echo "Sourcing pre-deployment script for RobotConsole... (errors might be ignored)"
-DEPLOY_LIBRARIES=""
-DEPLOY_COMPONENT_FILES=""
-source src/predeploy-RobotConsole.sh 2>&1
-
-for I in $DEPLOY_LIBRARIES; do
-	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
-		FILE="$SMART_ROOT_ACE/bin/$I"
-	else
-		FILE="$SMART_ROOT_ACE/lib/$I"
-	fi
-	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
-done
-
-DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole=""
-for I in $DEPLOY_COMPONENT_FILES; do
-	if ls $REFERENCED_PROJECT_SmartRobotConsole/$I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole="$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $REFERENCED_PROJECT_SmartRobotConsole/$I"
-	elif ls $I > /dev/null 2>&1; then
-		DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole="$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $I"
-	fi
-done
-
-echo
 echo "Sourcing pre-deployment script for SmartCdlServer... (errors might be ignored)"
 DEPLOY_LIBRARIES=""
 DEPLOY_COMPONENT_FILES=""
@@ -205,6 +61,102 @@ for I in $DEPLOY_COMPONENT_FILES; do
 done
 
 echo
+echo "Sourcing pre-deployment script for SmartGazeboBaseServer... (errors might be ignored)"
+DEPLOY_LIBRARIES=""
+DEPLOY_COMPONENT_FILES=""
+source src/predeploy-SmartGazeboBaseServer.sh 2>&1
+
+for I in $DEPLOY_LIBRARIES; do
+	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
+		FILE="$SMART_ROOT_ACE/bin/$I"
+	else
+		FILE="$SMART_ROOT_ACE/lib/$I"
+	fi
+	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
+done
+
+DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer=""
+for I in $DEPLOY_COMPONENT_FILES; do
+	if ls $REFERENCED_PROJECT_SmartGazeboBaseServer/$I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $REFERENCED_PROJECT_SmartGazeboBaseServer/$I"
+	elif ls $I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer="$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $I"
+	fi
+done
+
+echo
+echo "Sourcing pre-deployment script for SmartMapperGridMap... (errors might be ignored)"
+DEPLOY_LIBRARIES=""
+DEPLOY_COMPONENT_FILES=""
+source src/predeploy-SmartMapperGridMap.sh 2>&1
+
+for I in $DEPLOY_LIBRARIES; do
+	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
+		FILE="$SMART_ROOT_ACE/bin/$I"
+	else
+		FILE="$SMART_ROOT_ACE/lib/$I"
+	fi
+	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
+done
+
+DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap=""
+for I in $DEPLOY_COMPONENT_FILES; do
+	if ls $REFERENCED_PROJECT_SmartMapperGridMap/$I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap="$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $REFERENCED_PROJECT_SmartMapperGridMap/$I"
+	elif ls $I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap="$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $I"
+	fi
+done
+
+echo
+echo "Sourcing pre-deployment script for SmartPlannerBreadthFirstSearch... (errors might be ignored)"
+DEPLOY_LIBRARIES=""
+DEPLOY_COMPONENT_FILES=""
+source src/predeploy-SmartPlannerBreadthFirstSearch.sh 2>&1
+
+for I in $DEPLOY_LIBRARIES; do
+	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
+		FILE="$SMART_ROOT_ACE/bin/$I"
+	else
+		FILE="$SMART_ROOT_ACE/lib/$I"
+	fi
+	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
+done
+
+DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch=""
+for I in $DEPLOY_COMPONENT_FILES; do
+	if ls $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/$I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch="$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/$I"
+	elif ls $I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch="$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $I"
+	fi
+done
+
+echo
+echo "Sourcing pre-deployment script for SmartRobotConsole... (errors might be ignored)"
+DEPLOY_LIBRARIES=""
+DEPLOY_COMPONENT_FILES=""
+source src/predeploy-SmartRobotConsole.sh 2>&1
+
+for I in $DEPLOY_LIBRARIES; do
+	if [ -e "$SMART_ROOT_ACE/bin/$I" ]; then
+		FILE="$SMART_ROOT_ACE/bin/$I"
+	else
+		FILE="$SMART_ROOT_ACE/lib/$I"
+	fi
+	DEPLOY_LIBRARIES_USER="$DEPLOY_LIBRARIES_USER $FILE"
+done
+
+DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole=""
+for I in $DEPLOY_COMPONENT_FILES; do
+	if ls $REFERENCED_PROJECT_SmartRobotConsole/$I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole="$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $REFERENCED_PROJECT_SmartRobotConsole/$I"
+	elif ls $I > /dev/null 2>&1; then
+		DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole="$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $I"
+	fi
+done
+
+echo
 
 
 DEPL_FILES="
@@ -214,45 +166,35 @@ src-gen/deployment/tiler.sh
 src-gen/deployment/start-VirtualBoxImage.sh
 $SMART_ROOT_ACE/bin/NamingService
 src-gen/deployment/ns_config.ini
-src/GazeboBaseServer_data
-src/startstop-hooks-GazeboBaseServer.sh
-$SMART_ROOT_ACE/bin/SmartGazeboBaseServer
-src-gen/deployment/GazeboBaseServer.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-src/JoystickNavigation_data
-src/startstop-hooks-JoystickNavigation.sh
-$SMART_ROOT_ACE/bin/SmartJoystickNavigation
-src-gen/deployment/JoystickNavigation.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-src/JoystickServer_data
-src/startstop-hooks-JoystickServer.sh
-$SMART_ROOT_ACE/bin/SmartJoystickServer
-src-gen/deployment/JoystickServer.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-src/MapperGridMap_data
-src/startstop-hooks-MapperGridMap.sh
-$SMART_ROOT_ACE/bin/SmartMapperGridMap
-src-gen/deployment/MapperGridMap.ini
-$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-src/Planner_data
-src/startstop-hooks-Planner.sh
-$SMART_ROOT_ACE/bin/SmartPlannerBreadthFirstSearch
-src-gen/deployment/Planner.ini
-$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-src/RobotConsole_data
-src/startstop-hooks-RobotConsole.sh
-$SMART_ROOT_ACE/bin/SmartRobotConsole
-src-gen/deployment/RobotConsole.ini
 src/SmartCdlServer_data
 src/startstop-hooks-SmartCdlServer.sh
 $SMART_ROOT_ACE/bin/SmartCdlServer
 src-gen/deployment/SmartCdlServer.ini
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
-$SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
 $SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 $SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
+$SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
+src/SmartGazeboBaseServer_data
+src/startstop-hooks-SmartGazeboBaseServer.sh
+$SMART_ROOT_ACE/bin/SmartGazeboBaseServer
+src-gen/deployment/SmartGazeboBaseServer.ini
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
+src/SmartMapperGridMap_data
+src/startstop-hooks-SmartMapperGridMap.sh
+$SMART_ROOT_ACE/bin/SmartMapperGridMap
+src-gen/deployment/SmartMapperGridMap.ini
+$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
+src/SmartPlannerBreadthFirstSearch_data
+src/startstop-hooks-SmartPlannerBreadthFirstSearch.sh
+$SMART_ROOT_ACE/bin/SmartPlannerBreadthFirstSearch
+src-gen/deployment/SmartPlannerBreadthFirstSearch.ini
+$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
+src/SmartRobotConsole_data
+src/startstop-hooks-SmartRobotConsole.sh
+$SMART_ROOT_ACE/bin/SmartRobotConsole
+src-gen/deployment/SmartRobotConsole.ini
 
 $DEPLOY_LIBRARIES_USER
 "
@@ -279,9 +221,9 @@ if [ "$1" = "local" ]; then
 	rsync -l -r -v --progress --exclude ".svn" $DEPL_FILES $DEPLOYMENT_DIRECTORY/VirtualBoxImage
 else
 	# remote deployment
-	SSH_TARGET=smartsoft@localhost:$TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
+	SSH_TARGET=localhost:$TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
 	echo "Deployment to $SSH_TARGET"
-	ssh smartsoft@localhost mkdir -p $TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
+	ssh localhost mkdir -p $TARGET_DIRECTORY/$DEPLOYMENT_DIRECTORY
 	
 	TMPDIR=$(mktemp -d --suffix=.deployment) || exit 1
 	echo "Temporary directory: $TMPDIR"
@@ -290,48 +232,36 @@ else
 	# collect files in $TMPDIR
 	#rsync -l -r -v --progress --exclude ".svn" $DEPL_FILES $TMPDIR/
 	cp -rv $DEPL_FILES $TMPDIR 2>&1
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $TMPDIR/GazeboBaseServer_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $TMPDIR/GazeboBaseServer_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartGazeboBaseServer/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-GazeboBaseServer.sh 2>/dev/null
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation $TMPDIR/JoystickNavigation_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickNavigation $TMPDIR/JoystickNavigation_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartJoystickNavigation/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-JoystickNavigation.sh 2>/dev/null
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer $TMPDIR/JoystickServer_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartJoystickServer $TMPDIR/JoystickServer_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartJoystickServer/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-JoystickServer.sh 2>/dev/null
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $TMPDIR/MapperGridMap_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $TMPDIR/MapperGridMap_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartMapperGridMap/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-MapperGridMap.sh 2>/dev/null
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $TMPDIR/Planner_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $TMPDIR/Planner_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-Planner.sh 2>/dev/null
-#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $TMPDIR/RobotConsole_data/
-if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole" = "" ]; then
-	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $TMPDIR/RobotConsole_data/ 2>&1
-fi
-
-cp -v $REFERENCED_PROJECT_SmartRobotConsole/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-RobotConsole.sh 2>/dev/null
 #rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartCdlServer $TMPDIR/SmartCdlServer_data/
 if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartCdlServer" = "" ]; then
 	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartCdlServer $TMPDIR/SmartCdlServer_data/ 2>&1
 fi
 
 cp -v $REFERENCED_PROJECT_SmartCdlServer/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-SmartCdlServer.sh 2>/dev/null
+#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $TMPDIR/SmartGazeboBaseServer_data/
+if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer" = "" ]; then
+	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartGazeboBaseServer $TMPDIR/SmartGazeboBaseServer_data/ 2>&1
+fi
+
+cp -v $REFERENCED_PROJECT_SmartGazeboBaseServer/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-SmartGazeboBaseServer.sh 2>/dev/null
+#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $TMPDIR/SmartMapperGridMap_data/
+if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap" = "" ]; then
+	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartMapperGridMap $TMPDIR/SmartMapperGridMap_data/ 2>&1
+fi
+
+cp -v $REFERENCED_PROJECT_SmartMapperGridMap/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-SmartMapperGridMap.sh 2>/dev/null
+#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $TMPDIR/SmartPlannerBreadthFirstSearch_data/
+if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch" = "" ]; then
+	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartPlannerBreadthFirstSearch $TMPDIR/SmartPlannerBreadthFirstSearch_data/ 2>&1
+fi
+
+cp -v $REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-SmartPlannerBreadthFirstSearch.sh 2>/dev/null
+#rsync -l -r -v --progress --exclude ".svn" $DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $TMPDIR/SmartRobotConsole_data/
+if [ ! "$DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole" = "" ]; then
+	cp -rv $DEPLOY_COMPONENT_FILES_PATHS_SmartRobotConsole $TMPDIR/SmartRobotConsole_data/ 2>&1
+fi
+
+cp -v $REFERENCED_PROJECT_SmartRobotConsole/smartsoft/src/startstop-hooks.sh $TMPDIR/startstop-hooks-component-SmartRobotConsole.sh 2>/dev/null
 	# actually deploy:
 	rsync -z -l -r -v --progress --exclude ".svn" -e ssh $TMPDIR/ $SSH_TARGET
 fi

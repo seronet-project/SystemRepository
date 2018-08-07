@@ -1,18 +1,5 @@
 SystemParameterModel SystemTiagoNavigation extendsSystem SystemTiagoNavigation {
 
-	ComponentParameterInstance JoystickServer refinesParamStruct SmartJoystickServerParameters { 
-		ParameterRefinement General {
-			device = "/dev/input/js0"
-			invert_y1_axis = true
-			invert_y2_axis = true
-			invert_x1_axis = true
-			invert_x2_axis = true
-			interval_min = 0.04
-			interval_max = 0.5
-			verbose = true
-		}
-	}
-	
 	ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams { 
 		ParameterRefinement Cdl {
 			dataDir = "data/lookup-files/"

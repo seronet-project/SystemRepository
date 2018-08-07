@@ -1,5 +1,5 @@
 TargetPlatformModel SystemTiagoNavigation {
-	
+
 	TargetPlatformDefinition VirtualBoxImage
 	{
 		Linux "Ubuntu Linux 16.04 64bit";

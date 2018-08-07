@@ -21,8 +21,8 @@
 # delete it before running the code generator.
 #--------------------------------------------------------------------------
 
-# uncomment to disable predeploy script delivered by component
-source $REFERENCED_PROJECT_SmartGazeboBaseServer/src/predeploy.sh
+# uncomment to enable predeploy script delivered by component
+#source $REFERENCED_PROJECT_SmartGazeboBaseServer/smartsoft/src/predeploy.sh
 
 # Add SmartSoft libraries that shall be deployed to the target device where this
 # component is to be deployed.

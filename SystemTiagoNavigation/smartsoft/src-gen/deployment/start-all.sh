@@ -31,8 +31,8 @@ start)
 	
 	echo "Starting all devices ..."
 	
-	echo "Starting smartsoft@localhost"
-	xterm -fg red -title "SSH: smartsoft@localhost" -e 'echo;echo "Starting remote SSH session at smartsoft@localhost ..."; echo;echo;ssh -X smartsoft@localhost "cd /home/smartsoft/SOFTWARE/smartsoft/SystemTiagoNavigation.deployment; pwd; bash --login -i -e start-VirtualBoxImage.sh start"' &
+	echo "Starting localhost"
+	xterm -fg red -title "SSH: localhost" -e 'echo;echo "Starting remote SSH session at localhost ..."; echo;echo;ssh -X localhost "cd /tmp//SystemTiagoNavigation.deployment; pwd; bash --login -i -e start-VirtualBoxImage.sh start"' &
 	echo $! >> $PID_FILE
 	
 ;;
@@ -40,8 +40,8 @@ start)
 stop)
 	echo "Stopping all devices"
 	
-	echo "Stopping smartsoft@localhost"
-	xterm -title "stopping smartsoft@localhost" -e 'echo;echo "Starting remote SSH session at smartsoft@localhost ..."; echo;echo;ssh -X smartsoft@localhost "cd /home/smartsoft/SOFTWARE/smartsoft/SystemTiagoNavigation.deployment; pwd; bash --login -i -e start-VirtualBoxImage.sh stop"' 
+	echo "Stopping localhost"
+	xterm -title "stopping localhost" -e 'echo;echo "Starting remote SSH session at localhost ..."; echo;echo;ssh -X localhost "cd /tmp//SystemTiagoNavigation.deployment; pwd; bash --login -i -e start-VirtualBoxImage.sh stop"' 
 	echo $! >> $PID_FILE
 	
 	
