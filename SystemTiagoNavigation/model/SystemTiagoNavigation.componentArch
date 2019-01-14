@@ -6,39 +6,39 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 		RequiredService PlannerClient
 		RequiredService BaseStateClient
 
-	RequiredService NavVelSendClient
+		RequiredService NavVelSendClient
 
-	ParameterStructInstance SystemTiagoNavigation.SmartCdlServer
-		
+		ParameterStructInstance SystemTiagoNavigation.SmartCdlServer
+
 		Activity CdlTask configuration CDL;
-		
+
 	}
 	ComponentInstance SmartGazeboBaseServer instantiates SmartGazeboBaseServer
 	{
 		ProvidedService BaseStateServiceOut
 		ProvidedService LaserServiceOut
 		ProvidedService NavVelServiceIn
-		
+
 		InputHandler VelocityInpuHandler configuration NavVel
-		
+
 		Activity LaserTask configuration Laser
 	}
-	 
+
 	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
 	{
 		RequiredService LaserServiceIn // { connectTo GazeboBaseServer.LaserServiceOut }
 		ProvidedService CurrMapOut
-	} 
+	}
 	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
 	{
 		RequiredService BaseStateClient // { connectTo GazeboBaseServer.BaseStateServiceOut }
 		RequiredService CurMapClient // { connectTo MapperGridMap.CurrMapOut }
 		ProvidedService PlannerGoalServer
-	} 
+	}
 	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
 	{
 	}
-	
+
 	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut;
 	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
 	Connection SmartCdlServer.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;

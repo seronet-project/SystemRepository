@@ -41,7 +41,7 @@ stop)
 	echo "Stopping all devices"
 	
 	echo "Stopping student@c26-11-robota"
-	xterm -title "stopping student@c26-11-robota" -e 'echo;echo "Starting remote SSH session at student@c26-11-robota ..."; echo;echo;ssh -X student@c26-11-robota "cd /tmp/SystemP3dxNavigationRealWorld.deployment; pwd; bash --login -i -e start-C26_11_RobotA.sh stop"' 
+	xterm -title "stopping student@c26-11-robota" -e 'echo;echo "Starting remote SSH session at student@c26-11-robota ..."; echo;echo;ssh -X student@c26-11-robota "cd /tmp/SystemP3dxNavigationRealWorld.deployment; pwd; bash --login -i -e start-C26_11_RobotA.sh stop"'
 	echo $! >> $PID_FILE
 	
 	

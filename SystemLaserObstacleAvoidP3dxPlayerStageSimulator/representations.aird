@@ -16,6 +16,8 @@
     <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.parameters</semanticResources>
     <semanticResources>platform:/resource/ComponentPlayerStageSimulator/model/ComponentPlayerStageSimulator.component</semanticResources>
     <semanticResources>platform:/resource/ComponentPlayerStageSimulator/model/ComponentPlayerStageSimulator.componentParameters</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_AMI5sI_tEeiqe88wSyzFwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_AMamhY_tEeiqe88wSyzFwQ" name="SystemLaserObstacleAvoidP3dxPlayerStageSimulatorComponentArchitecture" repPath="#_AMZYYI_tEeiqe88wSyzFwQ">
@@ -329,15 +331,6 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_ezNwuI_tEeiqe88wSyzFwQ" fontName="Ubuntu" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezNwuY_tEeiqe88wSyzFwQ" x="7" y="30"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_ftAfcI_tEeiqe88wSyzFwQ" type="3008" element="_fs05QI_tEeiqe88wSyzFwQ">
-              <children xmi:type="notation:Node" xmi:id="_ftAfc4_tEeiqe88wSyzFwQ" type="5005"/>
-              <children xmi:type="notation:Node" xmi:id="_ftAfdI_tEeiqe88wSyzFwQ" type="7002">
-                <styles xmi:type="notation:SortingStyle" xmi:id="_ftAfdY_tEeiqe88wSyzFwQ"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_ftAfdo_tEeiqe88wSyzFwQ"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_ftAfcY_tEeiqe88wSyzFwQ" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ftAfco_tEeiqe88wSyzFwQ" x="115" y="33" width="99" height="37"/>
-            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_ezNwtY_tEeiqe88wSyzFwQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_ezNwto_tEeiqe88wSyzFwQ"/>
           </children>
@@ -350,10 +343,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kAyo0o_tEeiqe88wSyzFwQ"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_kAyBwY_tEeiqe88wSyzFwQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kAyBwo_tEeiqe88wSyzFwQ" x="293" y="40" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kAyBwo_tEeiqe88wSyzFwQ" x="137" y="40" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ezNwsY_tEeiqe88wSyzFwQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezNwso_tEeiqe88wSyzFwQ" x="276" y="300" width="303" height="87"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezNwso_tEeiqe88wSyzFwQ" x="144" y="120" width="147" height="87"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_AM680Y_tEeiqe88wSyzFwQ"/>
       </data>
@@ -362,8 +355,8 @@
       <target xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0"/>
       <semanticElements xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_kAmbkI_tEeiqe88wSyzFwQ" name="eth2" tooltipText="NetworkInterface" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="TargetPlatform:NetworkInterface" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="TargetPlatform:NetworkInterface" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.1"/>
+        <target xmi:type="TargetPlatform:NetworkInterface" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.0"/>
+        <semanticElements xmi:type="TargetPlatform:NetworkInterface" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -372,7 +365,10 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']"/>
       </ownedBorderedNodes>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_eytaYY_tEeiqe88wSyzFwQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_eytaYY_tEeiqe88wSyzFwQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@style"/>
       </ownedStyle>
@@ -383,21 +379,10 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_eyxr0I_tEeiqe88wSyzFwQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_eyxr0I_tEeiqe88wSyzFwQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_fs05QI_tEeiqe88wSyzFwQ" name="dange" tooltipText="LoginAccount">
-        <target xmi:type="TargetPlatform:LoginAccount" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="TargetPlatform:LoginAccount" href="model/SystemLaserObstacleAvoidP3dxPlayerStageSimulator.target#//@elements.0/@elements.0"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_fs05QY_tEeiqe88wSyzFwQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>

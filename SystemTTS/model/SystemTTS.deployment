@@ -1,6 +1,6 @@
-DeploymentModel SystemTTS {
-
-TargetPlatformReference PC1 using SystemTTS.PC1
+DeploymentModel SystemTTS
+{
+	TargetPlatformReference PC1 using SystemTTS.PC1
 	{
 		UploadDirectory "/tmp"
 

@@ -26,6 +26,8 @@
     <semanticResources>platform:/resource/SmartPlannerBreadthFirstSearch/model/SmartPlannerBreadthFirstSearch.component</semanticResources>
     <semanticResources>platform:/resource/SmartPlannerBreadthFirstSearch/model/SmartPlannerBreadthFirstSearch.componentParameters</semanticResources>
     <semanticResources>platform:/resource/SmartRobotConsole/model/SmartRobotConsole.component</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_bMjL8JCxEeigF96pv4uYFQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bVN_wJCxEeigF96pv4uYFQ" name="SystemP3dxNavigationPlayerStageSimulatorComponentArchitecture" repPath="#_bUiDQJCxEeigF96pv4uYFQ">
@@ -632,7 +634,7 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-DG9UZDAEeigF96pv4uYFQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-DG9UZDAEeigF96pv4uYFQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@style"/>
       </ownedStyle>
@@ -643,7 +645,7 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-Dv2gJDAEeigF96pv4uYFQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-Dv2gJDAEeigF96pv4uYFQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
@@ -654,7 +656,7 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="__XjnwZDAEeigF96pv4uYFQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="__XjnwZDAEeigF96pv4uYFQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
@@ -662,7 +664,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ghCKEJDBEeigF96pv4uYFQ" name="CPU3" tooltipText="CPU">
         <target xmi:type="TargetPlatform:CPU" href="model/SystemP3dxNavigationPlayerStageSimulator.target#//@elements.0/@elements.2"/>
         <semanticElements xmi:type="TargetPlatform:CPU" href="model/SystemP3dxNavigationPlayerStageSimulator.target#//@elements.0/@elements.2"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ghCKEZDBEeigF96pv4uYFQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ghCKEZDBEeigF96pv4uYFQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='CPUContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='CPUContainer']"/>

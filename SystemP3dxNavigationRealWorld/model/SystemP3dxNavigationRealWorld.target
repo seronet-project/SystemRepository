@@ -1,6 +1,6 @@
-TargetPlatformModel SystemP3dxNavigationRealWorld {
-
-TargetPlatformDefinition C26_11_RobotA
+TargetPlatformModel SystemP3dxNavigationRealWorld
+{
+	TargetPlatformDefinition C26_11_RobotA
 	{
 		LoginAccount student { FullName "Student" Email "student@example.com" }
 		TargetMiddleware ACE_SmartSoft

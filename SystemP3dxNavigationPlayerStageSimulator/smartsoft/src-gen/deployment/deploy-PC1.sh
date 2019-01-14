@@ -177,8 +177,8 @@ $SMART_ROOT_ACE/bin/SmartCdlServer
 src-gen/deployment/SmartCdlServer.ini
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
 $SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 $SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
+$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 src/SmartMapperGridMap_data
 src/startstop-hooks-SmartMapperGridMap.sh
 $SMART_ROOT_ACE/bin/SmartMapperGridMap
@@ -189,8 +189,8 @@ src/SmartPlannerBreadthFirstSearch_data
 src/startstop-hooks-SmartPlannerBreadthFirstSearch.sh
 $SMART_ROOT_ACE/bin/SmartPlannerBreadthFirstSearch
 src-gen/deployment/SmartPlannerBreadthFirstSearch.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 src/SmartRobotConsole_data
 src/startstop-hooks-SmartRobotConsole.sh
 $SMART_ROOT_ACE/bin/SmartRobotConsole

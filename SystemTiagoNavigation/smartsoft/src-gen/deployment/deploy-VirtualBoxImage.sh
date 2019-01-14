@@ -170,10 +170,10 @@ src/SmartCdlServer_data
 src/startstop-hooks-SmartCdlServer.sh
 $SMART_ROOT_ACE/bin/SmartCdlServer
 src-gen/deployment/SmartCdlServer.ini
-$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
 $SMART_ROOT_ACE/lib/libCommBasicObjects.so*
-$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 $SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
+$SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 src/SmartGazeboBaseServer_data
 src/startstop-hooks-SmartGazeboBaseServer.sh
 $SMART_ROOT_ACE/bin/SmartGazeboBaseServer
