@@ -1,7 +1,7 @@
-TargetPlatformModel SystemLaserObstacleAvoidP3dxPlayerStageSimulator {
-
-TargetPlatformDefinition PC1
+TargetPlatformModel SystemLaserObstacleAvoidP3dxPlayerStageSimulator
+{
+	TargetPlatformDefinition PC1
 	{
-		LoginAccount dange { FullName "dange" Email "guest@example.com" }
 		NetworkInterface eth2 { HostAddress "localhost" }
-	} }
+	}
+}

@@ -194,8 +194,8 @@ src/SmartCdlServer_data
 src/startstop-hooks-SmartCdlServer.sh
 $SMART_ROOT_ACE/bin/SmartCdlServer
 src-gen/deployment/SmartCdlServer.ini
-$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
 $SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
 $SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 src/SmartLaserLMS200Server_data
@@ -207,8 +207,8 @@ src/SmartMapperGridMap_data
 src/startstop-hooks-SmartMapperGridMap.sh
 $SMART_ROOT_ACE/bin/SmartMapperGridMap
 src-gen/deployment/SmartMapperGridMap.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 src/SmartPioneerBaseServer_data
 src/startstop-hooks-SmartPioneerBaseServer.sh
 $SMART_ROOT_ACE/bin/SmartPioneerBaseServer

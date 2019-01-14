@@ -1,6 +1,6 @@
-DeploymentModel SystemLaserObstacleAvoidTiagoGazeboSimulator {
-
-TargetPlatformReference PC1 using SystemLaserObstacleAvoidTiagoGazeboSimulator.PC1
+DeploymentModel SystemLaserObstacleAvoidTiagoGazeboSimulator
+{
+	TargetPlatformReference PC1 using SystemLaserObstacleAvoidTiagoGazeboSimulator.PC1
 	{
 		UploadDirectory "/tmp"
 

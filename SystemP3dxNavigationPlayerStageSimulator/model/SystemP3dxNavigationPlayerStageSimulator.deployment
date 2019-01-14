@@ -1,6 +1,6 @@
-DeploymentModel SystemP3dxNavigationPlayerStageSimulator {
-
-TargetPlatformReference PC1 using SystemP3dxNavigationPlayerStageSimulator.PC1
+DeploymentModel SystemP3dxNavigationPlayerStageSimulator
+{
+	TargetPlatformReference PC1 using SystemP3dxNavigationPlayerStageSimulator.PC1
 	{
 		UploadDirectory "/tmp"
 
@@ -13,5 +13,5 @@ TargetPlatformReference PC1 using SystemP3dxNavigationPlayerStageSimulator.PC1
 	NamingService
 	{
 		deploy-to PC1 }
-ComponentArtefact SystemP3dxNavigationPlayerStageSimulator.SmartRobotConsole deploy-to PC1
+	ComponentArtefact SystemP3dxNavigationPlayerStageSimulator.SmartRobotConsole deploy-to PC1
 }

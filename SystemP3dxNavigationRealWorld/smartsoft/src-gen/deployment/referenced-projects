@@ -2,9 +2,9 @@
 # Any changes will be overwritten next time the deployment project
 # is deployed/run from within the SmartMDSD toolchain.
 
-REFERENCED_PROJECT_SmartCdlServer="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartCdlServer"
-REFERENCED_PROJECT_SmartLaserLMS200Server="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartLaserLMS200Server"
-REFERENCED_PROJECT_SmartMapperGridMap="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartMapperGridMap"
-REFERENCED_PROJECT_SmartPioneerBaseServer="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartPioneerBaseServer"
-REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartPlannerBreadthFirstSearch"
-REFERENCED_PROJECT_SmartRobotConsole="/home/stampfer/SOFTWARE/smartsoft_dev_ace_v3/src/ComponentRepository/SmartRobotConsole"
+REFERENCED_PROJECT_SmartCdlServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartCdlServer"
+REFERENCED_PROJECT_SmartLaserLMS200Server="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartLaserLMS200Server"
+REFERENCED_PROJECT_SmartMapperGridMap="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartMapperGridMap"
+REFERENCED_PROJECT_SmartPioneerBaseServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartPioneerBaseServer"
+REFERENCED_PROJECT_SmartPlannerBreadthFirstSearch="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartPlannerBreadthFirstSearch"
+REFERENCED_PROJECT_SmartRobotConsole="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/SmartRobotConsole"

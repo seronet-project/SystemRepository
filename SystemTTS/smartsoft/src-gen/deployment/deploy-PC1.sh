@@ -98,14 +98,14 @@ src/ComponentTTS_data
 src/startstop-hooks-ComponentTTS.sh
 $SMART_ROOT_ACE/bin/ComponentTTS
 src-gen/deployment/ComponentTTS.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 $SMART_ROOT_ACE/lib/libDomainSpeech.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 src/ComponentTTSClient_data
 src/startstop-hooks-ComponentTTSClient.sh
 $SMART_ROOT_ACE/bin/ComponentTTSClient
 src-gen/deployment/ComponentTTSClient.ini
-$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 $SMART_ROOT_ACE/lib/libDomainSpeech.so*
+$SMART_ROOT_ACE/lib/libCommBasicObjects.so*
 
 $DEPLOY_LIBRARIES_USER
 "

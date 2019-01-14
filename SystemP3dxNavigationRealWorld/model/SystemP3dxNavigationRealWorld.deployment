@@ -1,6 +1,6 @@
-DeploymentModel SystemP3dxNavigationRealWorld {
-
-TargetPlatformReference C26_11_RobotA using SystemP3dxNavigationRealWorld.C26_11_RobotA
+DeploymentModel SystemP3dxNavigationRealWorld
+{
+	TargetPlatformReference C26_11_RobotA using SystemP3dxNavigationRealWorld.C26_11_RobotA
 	{
 		UploadDirectory "/tmp"
 		LoginAccount student

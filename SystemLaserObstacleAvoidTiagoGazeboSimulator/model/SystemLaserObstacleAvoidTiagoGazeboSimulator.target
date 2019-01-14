@@ -1,7 +1,8 @@
-TargetPlatformModel SystemLaserObstacleAvoidTiagoGazeboSimulator {
-
-TargetPlatformDefinition PC1
+TargetPlatformModel SystemLaserObstacleAvoidTiagoGazeboSimulator
+{
+	TargetPlatformDefinition PC1
 	{
 		LoginAccount dange { FullName "dange" Email "guest@example.com" }
 		NetworkInterface eth2 { HostAddress "localhost" }
-	} }
+	}
+}
