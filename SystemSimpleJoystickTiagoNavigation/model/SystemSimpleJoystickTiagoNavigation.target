@@ -1,0 +1,7 @@
+TargetPlatformModel SystemSimpleJoystickTiagoNavigation {
+
+TargetPlatformDefinition LocalPC
+	{
+		TargetMiddleware OpcUa_SeRoNet
+		NetworkInterface lh { HostAddress "localhost" }
+	} }

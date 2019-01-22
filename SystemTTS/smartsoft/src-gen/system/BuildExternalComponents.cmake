@@ -4,15 +4,15 @@ INCLUDE(ExternalProject)
 
 ExternalProject_Add(ComponentTTSExternal
 	PREFIX ComponentTTS
-	SOURCE_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/ComponentTTS/smartsoft"
-	BINARY_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/ComponentTTS/smartsoft/build"
+	SOURCE_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/ComponentTTS/smartsoft"
+	BINARY_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/ComponentTTS/smartsoft/build"
 	INSTALL_COMMAND ""
 )
 
 ExternalProject_Add(ComponentTTSClientExternal
 	PREFIX ComponentTTSClient
-	SOURCE_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/ComponentTTSClient/smartsoft"
-	BINARY_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/github/ComponentRepository/ComponentTTSClient/smartsoft/build"
+	SOURCE_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/ComponentTTSClient/smartsoft"
+	BINARY_DIR "/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/ComponentTTSClient/smartsoft/build"
 	INSTALL_COMMAND ""
 )
 

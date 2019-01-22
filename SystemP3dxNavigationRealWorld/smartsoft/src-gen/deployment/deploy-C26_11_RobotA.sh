@@ -196,8 +196,8 @@ $SMART_ROOT_ACE/bin/SmartCdlServer
 src-gen/deployment/SmartCdlServer.ini
 $SMART_ROOT_ACE/lib/libCommNavigationObjects.so*
 $SMART_ROOT_ACE/lib/libCommRobotinoObjects.so*
-$SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
 $SMART_ROOT_ACE/lib/libCommBasicObjects.so*
+$SMART_ROOT_ACE/lib/libCommTrackingObjects.so*
 src/SmartLaserLMS200Server_data
 src/startstop-hooks-SmartLaserLMS200Server.sh
 $SMART_ROOT_ACE/bin/SmartLaserLMS200Server

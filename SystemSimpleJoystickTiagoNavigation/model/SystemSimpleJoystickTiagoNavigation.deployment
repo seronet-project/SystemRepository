@@ -1,0 +1,14 @@
+DeploymentModel SystemSimpleJoystickTiagoNavigation {
+
+TargetPlatformReference LocalPC using SystemSimpleJoystickTiagoNavigation.LocalPC
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface lh
+	}
+	NamingService
+	{
+		deploy-to LocalPC }
+	ComponentArtefact SystemSimpleJoystickTiagoNavigation.SmartGazeboBaseServer deploy-to LocalPC
+	ComponentArtefact SystemSimpleJoystickTiagoNavigation.SmartJoystickNavigation deploy-to LocalPC
+	ComponentArtefact SystemSimpleJoystickTiagoNavigation.SmartJoystickServer deploy-to LocalPC
+}

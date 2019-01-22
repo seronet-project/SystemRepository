@@ -1,0 +1,7 @@
+# This file is generated using the SmartMDSD Toolchain.
+# Any changes will be overwritten next time the deployment project
+# is deployed/run from within the SmartMDSD toolchain.
+
+REFERENCED_PROJECT_SmartGazeboBaseServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/SmartGazeboBaseServer"
+REFERENCED_PROJECT_SmartJoystickNavigation="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/SmartJoystickNavigation"
+REFERENCED_PROJECT_SmartJoystickServer="/home/alexej/SOFTWARE/v3-smartsoft-repos/repos/seronet/ComponentRepository/SmartJoystickServer"

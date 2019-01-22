@@ -39,11 +39,11 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 	{
 	}
 
-	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut;
-	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
-	Connection SmartCdlServer.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
-	Connection SmartCdlServer.LaserClient -> SmartGazeboBaseServer.LaserServiceOut;
-	Connection SmartMapperGridMap.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut;
-	Connection SmartCdlServer.NavVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn;
-	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer;
+	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut useMiddleware OpcUa_SeRoNet
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut useMiddleware OpcUa_SeRoNet
+	Connection SmartCdlServer.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut useMiddleware OpcUa_SeRoNet
+	Connection SmartCdlServer.LaserClient -> SmartGazeboBaseServer.LaserServiceOut useMiddleware OpcUa_SeRoNet
+	Connection SmartMapperGridMap.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut useMiddleware OpcUa_SeRoNet
+	Connection SmartCdlServer.NavVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn useMiddleware OpcUa_SeRoNet
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer useMiddleware OpcUa_SeRoNet
 }

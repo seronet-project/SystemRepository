@@ -1,0 +1,19 @@
+SystemComponentArchitecture SystemSimpleJoystickTiagoNavigation
+{
+	ComponentInstance SmartGazeboBaseServer instantiates SmartGazeboBaseServer
+	{
+		ProvidedService NavVelServiceIn
+	}
+	ComponentInstance SmartJoystickNavigation instantiates SmartJoystickNavigation
+	{
+		RequiredService JoystickServiceIn
+		RequiredService NavVelServiceOut
+	}
+	ComponentInstance SmartJoystickServer instantiates SmartJoystickServer
+	{
+		ProvidedService JoystickServcieOut
+	ParameterStructInstance SystemSimpleJoystickTiagoNavigationParams.SmartJoystickServer
+	}
+	Connection SmartJoystickNavigation.NavVelServiceOut -> SmartGazeboBaseServer.NavVelServiceIn useMiddleware OpcUa_SeRoNet
+	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut useMiddleware OpcUa_SeRoNet
+}
