@@ -1,0 +1,12 @@
+SystemComponentArchitecture SystemOpcUaPushTest
+{
+	ComponentInstance ComponentPushClient instantiates ComponentPushClient
+	{
+		RequiredService JoystickServiceIn
+	}
+	ComponentInstance ComponentPushServer instantiates ComponentPushServer
+	{
+		ProvidedService JoystickServiceOut
+	}
+	Connection ComponentPushClient.JoystickServiceIn -> ComponentPushServer.JoystickServiceOut useMiddleware OpcUa_SeRoNet
+}

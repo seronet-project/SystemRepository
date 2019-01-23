@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentArchitecture="http://www.ecore.org/system/ComponentArchitecture" xmlns:Deployment="http://www.ecore.org/system/Deployment" xmlns:SystemParameter="http://www.ecore.org/system/SystemParameter" xmlns:TargetPlatform="http://www.ecore.org/system/TargetPlatform" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentArchitecture="http://www.ecore.org/system/ComponentArchitecture" xmlns:Deployment="http://www.ecore.org/system/Deployment" xmlns:RoboticMiddleware="http://www.ecore.org/service/roboticMiddleware" xmlns:SystemParameter="http://www.ecore.org/system/SystemParameter" xmlns:TargetPlatform="http://www.ecore.org/system/TargetPlatform" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_U--LMB5SEemoJNQZvmWA6Q" selectedViews="_VFu6gB5SEemoJNQZvmWA6Q _VHi4YB5SEemoJNQZvmWA6Q _VIrg0B5SEemoJNQZvmWA6Q" version="12.1.0.201708031200">
     <semanticResources>model/SystemSimpleJoystickTiagoNavigation.componentArch</semanticResources>
     <semanticResources>model/SystemSimpleJoystickTiagoNavigation.deployment</semanticResources>
@@ -129,6 +129,24 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_WlO-aB5SEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WlO-aR5SEemoJNQZvmWA6Q" x="60" y="108" width="195" height="111"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_bgvx8B5ZEemU1Pu-Nfk-rg" type="2002" element="_bf9u0B5ZEemU1Pu-Nfk-rg">
+          <children xmi:type="notation:Node" xmi:id="_bg4U0B5ZEemU1Pu-Nfk-rg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_bg474B5ZEemU1Pu-Nfk-rg" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_bg474R5ZEemU1Pu-Nfk-rg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_bg474h5ZEemU1Pu-Nfk-rg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bgvx8R5ZEemU1Pu-Nfk-rg" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bgvx8h5ZEemU1Pu-Nfk-rg" x="720" y="192" width="111" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_bg8mQB5ZEemU1Pu-Nfk-rg" type="2002" element="_bgWwYB5ZEemU1Pu-Nfk-rg">
+          <children xmi:type="notation:Node" xmi:id="_bg9NUB5ZEemU1Pu-Nfk-rg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_bg9NUR5ZEemU1Pu-Nfk-rg" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_bg9NUh5ZEemU1Pu-Nfk-rg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_bg9NUx5ZEemU1Pu-Nfk-rg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bg8mQR5ZEemU1Pu-Nfk-rg" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bg8mQh5ZEemU1Pu-Nfk-rg" x="300" y="96" width="111" height="46"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_VGrVsh5SEemoJNQZvmWA6Q"/>
         <edges xmi:type="notation:Edge" xmi:id="_fPIMYB5SEemoJNQZvmWA6Q" type="4001" element="_fO7YEB5SEemoJNQZvmWA6Q" source="_cPVach5SEemoJNQZvmWA6Q" target="_eEwrAB5SEemoJNQZvmWA6Q">
           <children xmi:type="notation:Node" xmi:id="_fPIMZB5SEemoJNQZvmWA6Q" type="6001">
@@ -161,6 +179,38 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq4UQx5SEemoJNQZvmWA6Q" points="[0, 0, 147, 0]$[-147, 0, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq4USh5SEemoJNQZvmWA6Q" id="(0.0,0.5666666666666667)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq47UB5SEemoJNQZvmWA6Q" id="(1.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_bhO6IB5ZEemU1Pu-Nfk-rg" type="4001" element="_bgkLwB5ZEemU1Pu-Nfk-rg" source="_fPIMYB5SEemoJNQZvmWA6Q" target="_bgvx8B5ZEemU1Pu-Nfk-rg">
+          <children xmi:type="notation:Node" xmi:id="_bhQvUB5ZEemU1Pu-Nfk-rg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhQvUR5ZEemU1Pu-Nfk-rg" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bhRWYB5ZEemU1Pu-Nfk-rg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhRWYR5ZEemU1Pu-Nfk-rg" x="-1" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bhR9cB5ZEemU1Pu-Nfk-rg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhR9cR5ZEemU1Pu-Nfk-rg" x="-1" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bhO6IR5ZEemU1Pu-Nfk-rg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bhO6Ih5ZEemU1Pu-Nfk-rg" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bhO6Ix5ZEemU1Pu-Nfk-rg" points="[-2, 16, 0, -15]$[-2, 23, 0, -8]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bhjDMB5ZEemU1Pu-Nfk-rg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bhjDMR5ZEemU1Pu-Nfk-rg" id="(0.47706422018348627,0.16326530612244897)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_bhjDMh5ZEemU1Pu-Nfk-rg" type="4001" element="_bglZ4B5ZEemU1Pu-Nfk-rg" source="_fq4UQB5SEemoJNQZvmWA6Q" target="_bg8mQB5ZEemU1Pu-Nfk-rg">
+          <children xmi:type="notation:Node" xmi:id="_bhjqQB5ZEemU1Pu-Nfk-rg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhjqQR5ZEemU1Pu-Nfk-rg" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bhjqQh5ZEemU1Pu-Nfk-rg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhjqQx5ZEemU1Pu-Nfk-rg" x="2" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bhjqRB5ZEemU1Pu-Nfk-rg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhjqRR5ZEemU1Pu-Nfk-rg" x="4" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bhjDMx5ZEemU1Pu-Nfk-rg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bhjDNB5ZEemU1Pu-Nfk-rg" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bhjDNR5ZEemU1Pu-Nfk-rg" points="[3, 0, 2, 33]$[3, -31, 2, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bhkRUB5ZEemU1Pu-Nfk-rg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bhkRUR5ZEemU1Pu-Nfk-rg" id="(0.46788990825688076,0.9545454545454546)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -255,7 +305,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@subContainerMappings[name='ParameterStructInstanceContainer']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_fO7YEB5SEemoJNQZvmWA6Q" name="CommNavigationVelocity" sourceNode="_cO7x0B5SEemoJNQZvmWA6Q" targetNode="_eEhacB5SEemoJNQZvmWA6Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_fO7YEB5SEemoJNQZvmWA6Q" name="CommNavigationVelocity" outgoingEdges="_bgkLwB5ZEemU1Pu-Nfk-rg" sourceNode="_cO7x0B5SEemoJNQZvmWA6Q" targetNode="_eEhacB5SEemoJNQZvmWA6Q">
       <target xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.0"/>
       <semanticElements xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_fO7YER5SEemoJNQZvmWA6Q" targetArrow="NoDecoration" size="2">
@@ -264,7 +314,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_fqSeYB5SEemoJNQZvmWA6Q" name="CommJoystick" sourceNode="_cO7KwB5SEemoJNQZvmWA6Q" targetNode="_bEuogB5SEemoJNQZvmWA6Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_fqSeYB5SEemoJNQZvmWA6Q" name="CommJoystick" outgoingEdges="_bglZ4B5ZEemU1Pu-Nfk-rg" sourceNode="_cO7KwB5SEemoJNQZvmWA6Q" targetNode="_bEuogB5SEemoJNQZvmWA6Q">
       <target xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.1"/>
       <semanticElements xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_fqTFcB5SEemoJNQZvmWA6Q" targetArrow="NoDecoration" size="2">
@@ -272,6 +322,44 @@
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_fqTFcR5SEemoJNQZvmWA6Q" iconPath="/org.sirius.tools/icons/commObj_16x16.gif"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bf9u0B5ZEemU1Pu-Nfk-rg" name="OPC UA SeRoNet Backend" tooltipText="OPC UA SeRoNet Backend" incomingEdges="_bgkLwB5ZEemU1Pu-Nfk-rg">
+      <target xmi:type="RoboticMiddleware:OpcUa_SeRoNet" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.0/@middlewareSelection"/>
+      <semanticElements xmi:type="RoboticMiddleware:OpcUa_SeRoNet" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.0/@middlewareSelection"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bgU7MB5ZEemU1Pu-Nfk-rg" iconPath="/org.sirius.system.componentArchitecture.design/icons/SeRoNetIcon.png" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='MiddlewareSelectionContainer']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='MiddlewareSelectionContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bgWwYB5ZEemU1Pu-Nfk-rg" name="OPC UA SeRoNet Backend" tooltipText="OPC UA SeRoNet Backend" incomingEdges="_bglZ4B5ZEemU1Pu-Nfk-rg">
+      <target xmi:type="RoboticMiddleware:OpcUa_SeRoNet" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.1/@middlewareSelection"/>
+      <semanticElements xmi:type="RoboticMiddleware:OpcUa_SeRoNet" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.1/@middlewareSelection"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bgX-gB5ZEemU1Pu-Nfk-rg" iconPath="/org.sirius.system.componentArchitecture.design/icons/SeRoNetIcon.png" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='MiddlewareSelectionContainer']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='MiddlewareSelectionContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_bgkLwB5ZEemU1Pu-Nfk-rg" sourceNode="_fO7YEB5SEemoJNQZvmWA6Q" targetNode="_bf9u0B5ZEemU1Pu-Nfk-rg">
+      <target xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_bgky0B5ZEemU1Pu-Nfk-rg" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@edgeMappings[name='MWConnectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_bgky0R5ZEemU1Pu-Nfk-rg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@edgeMappings[name='MWConnectionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_bglZ4B5ZEemU1Pu-Nfk-rg" sourceNode="_fqSeYB5SEemoJNQZvmWA6Q" targetNode="_bgWwYB5ZEemU1Pu-Nfk-rg">
+      <target xmi:type="ComponentArchitecture:Connection" href="model/SystemSimpleJoystickTiagoNavigation.componentArch#//@connections.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_bglZ4R5ZEemU1Pu-Nfk-rg" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@edgeMappings[name='MWConnectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_bglZ4h5ZEemU1Pu-Nfk-rg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@additionalLayers[name='SeRoNet']/@edgeMappings[name='MWConnectionEdge']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_VGkA9B5SEemoJNQZvmWA6Q"/>
